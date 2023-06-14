@@ -53,7 +53,7 @@ def convert_til_2_readme(source, template_file, dest):
                 all_articles.append(article)
         cat_articles.sort(key=lambda a: a['date'])
         
-        cat_content += "| :books: **{}** [ {} articles ] | |\n".format(cat, len(cat_articles))
+        cat_content += "| 📚 **{}** [ {} articles ] | |\n".format(cat, len(cat_articles))
         for article in cat_articles:
             count += 1
             cat_content += "| {}. [{}]({}/{}) | {} |\n".format(
