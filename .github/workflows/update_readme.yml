@@ -4,11 +4,11 @@
 name: Python application
 
 on:
-  # Schedule updates (each 4 hour)
-  schedule: [{cron: "0 4 * * *"}]
-  # Lines below let you run workflow manually and on each commit
-  workflow_dispatch:
-  push: {branches: ["master", "main"]}
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
 
 permissions:
   contents: read
