@@ -33,7 +33,7 @@ def parse_article(content, category):
 
 
 def convert_til_2_readme(source, template_file, dest):
-    excluded_folders = [".git", ".vscode"]
+    excluded_folders = [".git", ".vscode", ".github"]
     categories = [f for f in os.listdir(source) if os.path.isdir(f) and f not in excluded_folders]
     categories.sort()
     all_articles = []
