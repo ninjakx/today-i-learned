@@ -10,9 +10,9 @@ This repo has a tool that help you to manage and write down what you learned in 
 
 # What I learned
 
-| Table of Contents | :point_down: |
+| Table of Contents | ⬇️ |
 | -------- | -------- |
-| :new: **Top 5 recent learning** | |
+| 🆕 **Top 5 recent learning** | |
 | [Database Sharding and Partitioning](Database/Database-Sharding-and-Partitioning.md) [Database] | 2023-06-14 |
 | 📚 **Database** [ 1 articles ] | |
 | 1. [Database Sharding and Partitioning](Database/Database-Sharding-and-Partitioning.md) | 2023-06-14 |
