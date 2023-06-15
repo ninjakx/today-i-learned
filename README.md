@@ -13,9 +13,18 @@ This repo has a tool that help you to manage and write down what you learned in 
 | Table of Contents | ⬇️ |
 | -------- | -------- |
 | 🆕 **Top 5 recent learning** | |
+| [Golang pointers + GC](Golang/Golang-pointers-+-GC.md) [Golang] | 2023-06-15 |
+| [API Composition Pattern in Microservices](Microservices/API-Composition-Pattern-in-Microservices.md) [Microservices] | 2023-06-15 |
+| [Why do programming languages need automatic garbage collection?](Programming-Languages/Why-do-programming-languages-need-automatic-garbage-collection?.md) [Programming-Languages] | 2023-06-15 |
 | [Database Sharding and Partitioning](Database/Database-Sharding-and-Partitioning.md) [Database] | 2023-06-14 |
 | 📚 **Database** [ 1 articles ] | |
 | 1. [Database Sharding and Partitioning](Database/Database-Sharding-and-Partitioning.md) | 2023-06-14 |
+| 📚 **Golang** [ 1 articles ] | |
+| 2. [Golang pointers + GC](Golang/Golang-pointers-+-GC.md) | 2023-06-15 |
+| 📚 **Microservices** [ 1 articles ] | |
+| 3. [API Composition Pattern in Microservices](Microservices/API-Composition-Pattern-in-Microservices.md) | 2023-06-15 |
+| 📚 **Programming-Languages** [ 1 articles ] | |
+| 4. [Why do programming languages need automatic garbage collection?](Programming-Languages/Why-do-programming-languages-need-automatic-garbage-collection?.md) | 2023-06-15 |
 
 
 # Instruction
