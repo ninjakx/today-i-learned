@@ -65,7 +65,7 @@ def convert_til_2_readme(source, template_file, dest):
         content += "| [{}]({}/{}) [{}] | {} |\n".format(
             article['title'], article['category'],
             article['file_name'], article['category'],
-            article['date'].strftime('%Y-%m-%ds'))
+            article['date'].strftime('%Y-%m-%d'))
 
     content += cat_content
     format_content = read_entire_file(template_file)
