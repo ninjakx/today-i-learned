@@ -13,21 +13,21 @@ This repo has a tool that help you to manage and write down what you learned in 
 | Table of Contents | ⬇️ |
 | -------- | -------- |
 | 🆕 **Top 5 recent learning** | |
-| [Designing Workflows in Microservices : Orchestration vs Choreography](Microservices/Designing-Workflows-in-Microservices-:-Orchestration-vs-Choreography.md) [Microservices] | 2023-06-17" |
-| [Handling timeouts in a microservice architecture](Microservices/Handling-timeouts-in-a-microservice-architecture.md) [Microservices] | 2023-06-17" |
-| [Golang pointers + GC](Golang/Golang-pointers-+-GC.md) [Golang] | 2023-06-15" |
-| [API Composition Pattern in Microservices](Microservices/API-Composition-Pattern-in-Microservices.md) [Microservices] | 2023-06-15" |
-| [Why do programming languages need automatic garbage collection?](Programming-Languages/Why-do-programming-languages-need-automatic-garbage-collection?.md) [Programming-Languages] | 2023-06-15" |
+| [Designing Workflows in Microservices : Orchestration vs Choreography](Microservices/Designing-Workflows-in-Microservices-:-Orchestration-vs-Choreography.md) [Microservices] | 2023-06-17s |
+| [Handling timeouts in a microservice architecture](Microservices/Handling-timeouts-in-a-microservice-architecture.md) [Microservices] | 2023-06-17s |
+| [Golang pointers + GC](Golang/Golang-pointers-+-GC.md) [Golang] | 2023-06-15s |
+| [API Composition Pattern in Microservices](Microservices/API-Composition-Pattern-in-Microservices.md) [Microservices] | 2023-06-15s |
+| [Why do programming languages need automatic garbage collection?](Programming-Languages/Why-do-programming-languages-need-automatic-garbage-collection?.md) [Programming-Languages] | 2023-06-15s |
 | 📚 **Database** [ 1 articles ] | |
-| 1. [Database Sharding and Partitioning](Database/Database-Sharding-and-Partitioning.md) | 2023-06-14" |
+| 1. [Database Sharding and Partitioning](Database/Database-Sharding-and-Partitioning.md) | 2023-06-14 |
 | 📚 **Golang** [ 1 articles ] | |
-| 2. [Golang pointers + GC](Golang/Golang-pointers-+-GC.md) | 2023-06-15" |
+| 2. [Golang pointers + GC](Golang/Golang-pointers-+-GC.md) | 2023-06-15 |
 | 📚 **Microservices** [ 3 articles ] | |
-| 3. [API Composition Pattern in Microservices](Microservices/API-Composition-Pattern-in-Microservices.md) | 2023-06-15" |
-| 4. [Designing Workflows in Microservices : Orchestration vs Choreography](Microservices/Designing-Workflows-in-Microservices-:-Orchestration-vs-Choreography.md) | 2023-06-17" |
-| 5. [Handling timeouts in a microservice architecture](Microservices/Handling-timeouts-in-a-microservice-architecture.md) | 2023-06-17" |
+| 3. [API Composition Pattern in Microservices](Microservices/API-Composition-Pattern-in-Microservices.md) | 2023-06-15 |
+| 4. [Designing Workflows in Microservices : Orchestration vs Choreography](Microservices/Designing-Workflows-in-Microservices-:-Orchestration-vs-Choreography.md) | 2023-06-17 |
+| 5. [Handling timeouts in a microservice architecture](Microservices/Handling-timeouts-in-a-microservice-architecture.md) | 2023-06-17 |
 | 📚 **Programming-Languages** [ 1 articles ] | |
-| 6. [Why do programming languages need automatic garbage collection?](Programming-Languages/Why-do-programming-languages-need-automatic-garbage-collection?.md) | 2023-06-15" |
+| 6. [Why do programming languages need automatic garbage collection?](Programming-Languages/Why-do-programming-languages-need-automatic-garbage-collection?.md) | 2023-06-15 |
 
 
 # Instruction
