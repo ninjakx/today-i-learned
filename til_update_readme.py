@@ -58,14 +58,14 @@ def convert_til_2_readme(source, template_file, dest):
             count += 1
             cat_content += "| {}. [{}]({}/{}) | {} |\n".format(
                 count, article['title'], article['category'], article['file_name'],
-                article['date'].strftime('%Y-%m-%d"'))
+                article['date'].strftime('%Y-%m-%d'))
 
     all_articles.sort(reverse=True, key=lambda a: a['date'])
     for article in all_articles[0:5]:
         content += "| [{}]({}/{}) [{}] | {} |\n".format(
             article['title'], article['category'],
             article['file_name'], article['category'],
-            article['date'].strftime('%Y-%m-%d"'))
+            article['date'].strftime('%Y-%m-%ds'))
 
     content += cat_content
     format_content = read_entire_file(template_file)
