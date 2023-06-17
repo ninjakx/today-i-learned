@@ -56,16 +56,16 @@ def convert_til_2_readme(source, template_file, dest):
         cat_content += "| 📚 **{}** [ {} articles ] | |\n".format(cat, len(cat_articles))
         for article in cat_articles:
             count += 1
-            cat_content += "| {}. [{}]({}/{}) | ({}) |\n".format(
+            cat_content += "| {}. [{}]({}/{}) | {} |\n".format(
                 count, article['title'], article['category'], article['file_name'],
-                article['date'].strftime('%d %B %Y'))
+                article['date'].strftime('%Y-%m-%d"'))
 
     all_articles.sort(reverse=True, key=lambda a: a['date'])
     for article in all_articles[0:5]:
-        content += "| [{}]({}/{}) [{}] | ({}) |\n".format(
+        content += "| [{}]({}/{}) [{}] | {} |\n".format(
             article['title'], article['category'],
             article['file_name'], article['category'],
-            article['date'].strftime('%d %B %Y'))
+            article['date'].strftime('%Y-%m-%d"'))
 
     content += cat_content
     format_content = read_entire_file(template_file)
