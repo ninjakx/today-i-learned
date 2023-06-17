@@ -14,19 +14,20 @@ This repo has a tool that help you to manage and write down what you learned in 
 | -------- | -------- |
 | 🆕 **Top 5 recent learning** | |
 | [Designing Workflows in Microservices : Orchestration vs Choreography](Microservices/Designing-Workflows-in-Microservices-:-Orchestration-vs-Choreography.md) [Microservices] | (17 June 2023) |
+| [Handling timeouts in a microservice architecture](Microservices/Handling-timeouts-in-a-microservice-architecture.md) [Microservices] | (17 June 2023) |
 | [Golang pointers + GC](Golang/Golang-pointers-+-GC.md) [Golang] | (15 June 2023) |
 | [API Composition Pattern in Microservices](Microservices/API-Composition-Pattern-in-Microservices.md) [Microservices] | (15 June 2023) |
 | [Why do programming languages need automatic garbage collection?](Programming-Languages/Why-do-programming-languages-need-automatic-garbage-collection?.md) [Programming-Languages] | (15 June 2023) |
-| [Database Sharding and Partitioning](Database/Database-Sharding-and-Partitioning.md) [Database] | (14 June 2023) |
 | 📚 **Database** [ 1 articles ] | |
 | 1. [Database Sharding and Partitioning](Database/Database-Sharding-and-Partitioning.md) | (14 June 2023) |
 | 📚 **Golang** [ 1 articles ] | |
 | 2. [Golang pointers + GC](Golang/Golang-pointers-+-GC.md) | (15 June 2023) |
-| 📚 **Microservices** [ 2 articles ] | |
+| 📚 **Microservices** [ 3 articles ] | |
 | 3. [API Composition Pattern in Microservices](Microservices/API-Composition-Pattern-in-Microservices.md) | (15 June 2023) |
 | 4. [Designing Workflows in Microservices : Orchestration vs Choreography](Microservices/Designing-Workflows-in-Microservices-:-Orchestration-vs-Choreography.md) | (17 June 2023) |
+| 5. [Handling timeouts in a microservice architecture](Microservices/Handling-timeouts-in-a-microservice-architecture.md) | (17 June 2023) |
 | 📚 **Programming-Languages** [ 1 articles ] | |
-| 5. [Why do programming languages need automatic garbage collection?](Programming-Languages/Why-do-programming-languages-need-automatic-garbage-collection?.md) | (15 June 2023) |
+| 6. [Why do programming languages need automatic garbage collection?](Programming-Languages/Why-do-programming-languages-need-automatic-garbage-collection?.md) | (15 June 2023) |
 
 
 # Instruction
