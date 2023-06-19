@@ -7,11 +7,9 @@
 package main
 
 import (
-	"crypto/rsa"
-	"crypto/x509"
-	"encoding/pem"
 	"fmt"
 	"io/ioutil"
+	"log"
 	"os"
 
 	"github.com/beevik/etree"
@@ -22,90 +20,67 @@ func main() {
 	// Load the XML to be signed
 	doc := etree.NewDocument()
 	if err := doc.ReadFromFile("./path/to/file/tobesigned.xml"); err != nil {
-		fmt.Println("Error loading XML:", err)
-		os.Exit(1)
+		log.Fatal(err)
 	}
 
-	// Create a new Signature
-	signature := goxmldsig.NewSignature()
+	// Create a new signing context
+	ctx, err := dsig.NewDefaultSigningContext(dsig.NewMemoryKeyStore())
+	if err != nil {
+		log.Fatal(err)
+	}
 
 	// Use the c14n exclusive canonicalization
-	signature.CanonicalizationMethod = goxmldsig.EXC_C14N
+	ctx.CanonicalizationMethod = dsig.CanonicalizationMethodExclusiveXML
 
 	// Sign using SHA-256
-	signature.SignedInfo.CanonicalizationMethod = goxmldsig.EXC_C14N
-	signature.SignedInfo.SignatureMethod = goxmldsig.RSASHA256
+	ctx.SignatureMethod = dsig.SignatureMethodRSASHA256
 
-	// Add the reference
-	reference := goxmldsig.NewReference()
-	reference.URI = ""
-	reference.DigestMethod = goxmldsig.SHA256
-	reference.Transforms.Add(goxmldsig.TransformEnveloped)
-	signature.SignedInfo.References = append(signature.SignedInfo.References, reference)
+	// Add a reference to the document
+	ref := dsig.NewReference()
+	ref.URI = ""
+	ref.Transforms.Add(dsig.NewEnvelopedSignatureTransform())
+	ref.DigestMethod = dsig.DigestMethodSHA256
+	ctx.AddReference(ref)
 
 	// Load the private key
-	privateKeyBytes, err := ioutil.ReadFile("./path/to/privatekey.pem")
+	keyData, err := ioutil.ReadFile("./path/to/privatekey.pem")
 	if err != nil {
-		fmt.Println("Error reading private key:", err)
-		os.Exit(1)
+		log.Fatal(err)
 	}
-
-	block, _ := pem.Decode(privateKeyBytes)
-	if block == nil {
-		fmt.Println("Failed to parse PEM block containing the private key")
-		os.Exit(1)
-	}
-
-	privateKey, err := x509.ParsePKCS1PrivateKey(block.Bytes)
+	keyPair, err := ctx.KeyStore.LoadKeyPair(keyData, nil)
 	if err != nil {
-		fmt.Println("Error parsing private key:", err)
-		os.Exit(1)
+		log.Fatal(err)
 	}
-
-	signature.PrivateKey = privateKey.(*rsa.PrivateKey)
 
 	// Sign the XML file
-	if err := signature.Sign(doc); err != nil {
-		fmt.Println("Error signing XML:", err)
-		os.Exit(1)
-	}
-
-	// Load the certificate
-	certBytes, err := ioutil.ReadFile("./path/to/file/mycert.pem")
-	if err != nil {
-		fmt.Println("Error reading certificate:", err)
-		os.Exit(1)
-	}
-
-	block, _ = pem.Decode(certBytes)
-	if block == nil {
-		fmt.Println("Failed to parse PEM block containing the certificate")
-		os.Exit(1)
-	}
-
-	cert, err := x509.ParseCertificate(block.Bytes)
-	if err != nil {
-		fmt.Println("Error parsing certificate:", err)
-		os.Exit(1)
+	if err := ctx.Sign(keyPair); err != nil {
+		log.Fatal(err)
 	}
 
 	// Add the associated public key to the signature
-	signature.KeyInfo = &goxmldsig.KeyInfo{}
-	signature.KeyInfo.AddX509Data(cert)
+	certData, err := ioutil.ReadFile("./path/to/file/mycert.pem")
+	if err != nil {
+		log.Fatal(err)
+	}
+	ctx.KeyInfo.AddX509Data(certData)
 
 	// Append the signature to the XML
-	if err := signature.AppendSignature(doc.FindElement("//Signature")); err != nil {
-		fmt.Println("Error appending signature:", err)
-		os.Exit(1)
+	if err := ctx.CreateSignature(doc.Root()); err != nil {
+		log.Fatal(err)
 	}
 
 	// Save the signed XML
-	if err := doc.WriteToFile("./path/to/signed.xml"); err != nil {
-		fmt.Println("Error saving signed XML:", err)
-		os.Exit(1)
+	signedXML, err := os.Create("./path/to/signed.xml")
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer signedXML.Close()
+
+	if _, err := doc.WriteTo(signedXML); err != nil {
+		log.Fatal(err)
 	}
 
-	fmt.Println("XML signed successfully!")
+	fmt.Println("XML successfully signed!")
 }
 ```
 
