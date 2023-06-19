@@ -14,6 +14,7 @@ import (
 
 	"github.com/beevik/etree"
 	"github.com/russellhaering/goxmldsig"
+	"github.com/russellhaering/goxmlsec"
 )
 
 func main() {
@@ -24,10 +25,7 @@ func main() {
 	}
 
 	// Create a new signing context
-	ctx, err := dsig.NewDefaultSigningContext(dsig.NewMemoryKeyStore())
-	if err != nil {
-		log.Fatal(err)
-	}
+	ctx := dsig.NewDefaultSigningContext(getKeyStore())
 
 	// Use the c14n exclusive canonicalization
 	ctx.CanonicalizationMethod = dsig.CanonicalizationMethodExclusiveXML
@@ -47,13 +45,12 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	keyPair, err := ctx.KeyStore.LoadKeyPair(keyData, nil)
-	if err != nil {
+	if err := ctx.SetKeyData(keyData); err != nil {
 		log.Fatal(err)
 	}
 
 	// Sign the XML file
-	if err := ctx.Sign(keyPair); err != nil {
+	if err := ctx.SignEnveloped(doc); err != nil {
 		log.Fatal(err)
 	}
 
@@ -62,10 +59,12 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	ctx.KeyInfo.AddX509Data(certData)
+	if err := ctx.SetKeyData(certData); err != nil {
+		log.Fatal(err)
+	}
 
 	// Append the signature to the XML
-	if err := ctx.CreateSignature(doc.Root()); err != nil {
+	if err := ctx.AppendSignature(doc.Root()); err != nil {
 		log.Fatal(err)
 	}
 
@@ -81,6 +80,13 @@ func main() {
 	}
 
 	fmt.Println("XML successfully signed!")
+}
+
+// Helper function to create a new in-memory key store
+func getKeyStore() *goxmlsec.KeyStore {
+	ks := goxmlsec.NewKeyStore()
+	// Add any necessary certificates or keys to the key store
+	return ks
 }
 ```
 
