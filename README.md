@@ -14,13 +14,13 @@ This repo has a tool that help you to manage and write down what you learned in 
 | -------- | -------- |
 | 🆕 **Top 5 recent learning** | |
 | [SOAP basics](API/SOAP-basics.md) [API] | 2023-06-22 |
-| [rest vs soap](API/rest-vs-soap.md) [API] | 2023-06-22 |
+| [Rest Vs Soap](API/rest-vs-soap.md) [API] | 2023-06-22 |
 | [Creating certificate in go](Golang/Creating-certificate-in-go.md) [Golang] | 2023-06-19 |
 | [Distributed Cache and Caching Strategies](Distributed-System/Distributed-Cache-and-Caching-Strategies.md) [Distributed-System] | 2023-06-18 |
 | [Implement LRU Cache in Golang](Golang/Implement-LRU-Cache-in-Golang.md) [Golang] | 2023-06-18 |
 | 📚 **API** [ 2 articles ] | |
 | 1. [SOAP basics](API/SOAP-basics.md) | 2023-06-22 |
-| 2. [rest vs soap](API/rest-vs-soap.md) | 2023-06-22 |
+| 2. [Rest Vs Soap](API/rest-vs-soap.md) | 2023-06-22 |
 | 📚 **Database** [ 2 articles ] | |
 | 3. [Database Sharding and Partitioning](Database/Database-Sharding-and-Partitioning.md) | 2023-06-14 |
 | 4. [Model Your Relational Database Data as NoSQL Document Data](Database/Model-Your-Relational-Database-Data-as-NoSQL-Document-Data.md) | 2023-06-17 |
