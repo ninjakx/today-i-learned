@@ -13,11 +13,11 @@ This repo has a tool that help you to manage and write down what you learned in 
 | Table of Contents | ⬇️ |
 | -------- | -------- |
 | 🆕 **Top 5 recent learning** | |
+| [2PC and 3PC](Microservices/2PC-and-3PC.md) [Microservices] | 2023-07-01 |
 | [What is OAuth 2.0](API/What-is-OAuth-2.0.md) [API] | 2023-06-29 |
 | [SOAP basics](API/SOAP-basics.md) [API] | 2023-06-22 |
 | [Rest Vs Soap](API/rest-vs-soap.md) [API] | 2023-06-22 |
 | [Creating certificate in go](Golang/Creating-certificate-in-go.md) [Golang] | 2023-06-19 |
-| [Distributed Cache and Caching Strategies](Distributed-System/Distributed-Cache-and-Caching-Strategies.md) [Distributed-System] | 2023-06-18 |
 | 📚 **API** [ 3 articles ] | |
 | 1. [SOAP basics](API/SOAP-basics.md) | 2023-06-22 |
 | 2. [Rest Vs Soap](API/rest-vs-soap.md) | 2023-06-22 |
@@ -31,12 +31,13 @@ This repo has a tool that help you to manage and write down what you learned in 
 | 7. [Golang pointers + GC](Golang/Golang-pointers-+-GC.md) | 2023-06-15 |
 | 8. [Implement LRU Cache in Golang](Golang/Implement-LRU-Cache-in-Golang.md) | 2023-06-18 |
 | 9. [Creating certificate in go](Golang/Creating-certificate-in-go.md) | 2023-06-19 |
-| 📚 **Microservices** [ 3 articles ] | |
+| 📚 **Microservices** [ 4 articles ] | |
 | 10. [API Composition Pattern in Microservices](Microservices/API-Composition-Pattern-in-Microservices.md) | 2023-06-15 |
 | 11. [Handling timeouts in a microservice architecture](Microservices/Handling-timeouts-in-a-microservice-architecture.md) | 2023-06-17 |
 | 12. [Designing Workflows in Microservices : Orchestration vs Choreography](Microservices/Designing-Workflows-in-Microservices-:-Orchestration-vs-Choreography.md) | 2023-06-17 |
+| 13. [2PC and 3PC](Microservices/2PC-and-3PC.md) | 2023-07-01 |
 | 📚 **Programming-Languages** [ 1 articles ] | |
-| 13. [Why do programming languages need automatic garbage collection?](Programming-Languages/Why-do-programming-languages-need-automatic-garbage-collection?.md) | 2023-06-15 |
+| 14. [Why do programming languages need automatic garbage collection?](Programming-Languages/Why-do-programming-languages-need-automatic-garbage-collection?.md) | 2023-06-15 |
 
 
 # Instruction
