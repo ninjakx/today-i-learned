@@ -12,6 +12,9 @@ if [ "$#" -eq 1 ] && [ $1 == "commit" ]; then
     git commit -m "These are what I learned in $TODAY."
     read -r -p "Cool man! Do you want to push it to repo? [Y/n] " response
     if [ -z $response ] || [[ $response =~ ^(yes|y|Y|YES) ]]; then
+        git pull
+    fi
+    if [ -z $response ] || [[ $response =~ ^(yes|y|Y|YES) ]]; then
         git push $DEFAULT_REMOTE $DEFAULT_BRANCH
     fi
     echo -e "\033[92mKeep moving forward! >>>"
