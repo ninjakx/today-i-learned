@@ -13,33 +13,34 @@ This repo has a tool that help you to manage and write down what you learned in 
 | Table of Contents | ⬇️ |
 | -------- | -------- |
 | 🆕 **Top 5 recent learning** | |
-| [gRPC: The Future of Microservices Communication?](Microservices/gRPC:-The-Future-of-Microservices-Communication?.md) [Microservices] | 2023-08-24 |
+| [gRPC: The Future of Microservices Communication?](API/gRPC:-The-Future-of-Microservices-Communication?.md) [API] | 2023-08-24 |
+| [tRPC, gRPC, GraphQL or REST: when to use what?](API/-tRPC,-gRPC,-GraphQL-or-REST:-when-to-use-what?.md) [API] | 2023-08-24 |
 | [What is CDC?](Distributed-System/What-is-CDC?.md) [Distributed-System] | 2023-08-05 |
 | [2PC and 3PC](Microservices/2PC-and-3PC.md) [Microservices] | 2023-07-01 |
 | [What is OAuth 2.0](API/What-is-OAuth-2.0.md) [API] | 2023-06-29 |
-| [Rest Vs Soap](API/rest-vs-soap.md) [API] | 2023-06-22 |
-| 📚 **API** [ 3 articles ] | |
+| 📚 **API** [ 5 articles ] | |
 | 1. [Rest Vs Soap](API/rest-vs-soap.md) | 2023-06-22 |
 | 2. [SOAP basics](API/SOAP-basics.md) | 2023-06-22 |
 | 3. [What is OAuth 2.0](API/What-is-OAuth-2.0.md) | 2023-06-29 |
+| 4. [gRPC: The Future of Microservices Communication?](API/gRPC:-The-Future-of-Microservices-Communication?.md) | 2023-08-24 |
+| 5. [tRPC, gRPC, GraphQL or REST: when to use what?](API/-tRPC,-gRPC,-GraphQL-or-REST:-when-to-use-what?.md) | 2023-08-24 |
 | 📚 **Database** [ 2 articles ] | |
-| 4. [Database Sharding and Partitioning](Database/Database-Sharding-and-Partitioning.md) | 2023-06-14 |
-| 5. [Model Your Relational Database Data as NoSQL Document Data](Database/Model-Your-Relational-Database-Data-as-NoSQL-Document-Data.md) | 2023-06-17 |
+| 6. [Database Sharding and Partitioning](Database/Database-Sharding-and-Partitioning.md) | 2023-06-14 |
+| 7. [Model Your Relational Database Data as NoSQL Document Data](Database/Model-Your-Relational-Database-Data-as-NoSQL-Document-Data.md) | 2023-06-17 |
 | 📚 **Distributed-System** [ 2 articles ] | |
-| 6. [Distributed Cache and Caching Strategies](Distributed-System/Distributed-Cache-and-Caching-Strategies.md) | 2023-06-18 |
-| 7. [What is CDC?](Distributed-System/What-is-CDC?.md) | 2023-08-05 |
+| 8. [Distributed Cache and Caching Strategies](Distributed-System/Distributed-Cache-and-Caching-Strategies.md) | 2023-06-18 |
+| 9. [What is CDC?](Distributed-System/What-is-CDC?.md) | 2023-08-05 |
 | 📚 **Golang** [ 3 articles ] | |
-| 8. [Golang pointers + GC](Golang/Golang-pointers-+-GC.md) | 2023-06-15 |
-| 9. [Implement LRU Cache in Golang](Golang/Implement-LRU-Cache-in-Golang.md) | 2023-06-18 |
-| 10. [Creating certificate in go](Golang/Creating-certificate-in-go.md) | 2023-06-19 |
-| 📚 **Microservices** [ 5 articles ] | |
-| 11. [API Composition Pattern in Microservices](Microservices/API-Composition-Pattern-in-Microservices.md) | 2023-06-15 |
-| 12. [Handling timeouts in a microservice architecture](Microservices/Handling-timeouts-in-a-microservice-architecture.md) | 2023-06-17 |
-| 13. [Designing Workflows in Microservices : Orchestration vs Choreography](Microservices/Designing-Workflows-in-Microservices-:-Orchestration-vs-Choreography.md) | 2023-06-17 |
-| 14. [2PC and 3PC](Microservices/2PC-and-3PC.md) | 2023-07-01 |
-| 15. [gRPC: The Future of Microservices Communication?](Microservices/gRPC:-The-Future-of-Microservices-Communication?.md) | 2023-08-24 |
+| 10. [Golang pointers + GC](Golang/Golang-pointers-+-GC.md) | 2023-06-15 |
+| 11. [Implement LRU Cache in Golang](Golang/Implement-LRU-Cache-in-Golang.md) | 2023-06-18 |
+| 12. [Creating certificate in go](Golang/Creating-certificate-in-go.md) | 2023-06-19 |
+| 📚 **Microservices** [ 4 articles ] | |
+| 13. [API Composition Pattern in Microservices](Microservices/API-Composition-Pattern-in-Microservices.md) | 2023-06-15 |
+| 14. [Handling timeouts in a microservice architecture](Microservices/Handling-timeouts-in-a-microservice-architecture.md) | 2023-06-17 |
+| 15. [Designing Workflows in Microservices : Orchestration vs Choreography](Microservices/Designing-Workflows-in-Microservices-:-Orchestration-vs-Choreography.md) | 2023-06-17 |
+| 16. [2PC and 3PC](Microservices/2PC-and-3PC.md) | 2023-07-01 |
 | 📚 **Programming-Languages** [ 1 articles ] | |
-| 16. [Why do programming languages need automatic garbage collection?](Programming-Languages/Why-do-programming-languages-need-automatic-garbage-collection?.md) | 2023-06-15 |
+| 17. [Why do programming languages need automatic garbage collection?](Programming-Languages/Why-do-programming-languages-need-automatic-garbage-collection?.md) | 2023-06-15 |
 
 
 # Instruction
