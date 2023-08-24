@@ -2,6 +2,6 @@
 - Tags : #API
 
 ## graphql schema use case and functions
-[video](https://towardsdatascience.com/graphql-schema-use-case-and-functions-731ec4a39061)
+[blog](https://towardsdatascience.com/graphql-schema-use-case-and-functions-731ec4a39061)
 
 

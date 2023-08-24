@@ -2,4 +2,4 @@
 - Tags : #API
 
 ## GraphQL
-[video](https://www.solo.io/topics/graphql/)
+[blog](https://www.solo.io/topics/graphql/)
